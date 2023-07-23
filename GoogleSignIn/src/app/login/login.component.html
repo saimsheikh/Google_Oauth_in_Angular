@@ -1,1 +1,29 @@
-<p>login works!</p>
+<form (ngSubmit)="onSubmit()" class="login-form">
+    <div>
+      <label>Username:</label>
+      <input type="text" [(ngModel)]="username" name="username" required />
+    </div>
+    <div>
+      <label>Password:</label>
+      <input type="password" [(ngModel)]="password" name="password" required />
+    </div>
+    <button type="submit">Login</button>
+  
+    <br>
+    <div id="g_id_onload"
+     data-client_id="548848309272-pklpprrul3l4oe6lp29vpauq7r7jr1cq.apps.googleusercontent.com"
+     data-context="signin"
+     data-ux_mode="popup"
+     data-login_uri="http://localhost:3000/api/login"
+     data-itp_support="true">
+    </div>
+
+    <div class="g_id_signin"
+        data-type="standard"
+        data-shape="pill"
+        data-theme="filled_blue"
+        data-text="continue_with"
+        data-size="large"
+        data-logo_alignment="left">
+    </div>
+  </form>

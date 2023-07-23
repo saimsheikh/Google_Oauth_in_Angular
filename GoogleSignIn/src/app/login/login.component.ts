@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+declare const gapi: any;
 
 @Component({
   selector: 'app-login',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
+  private auth2: any;
+  public username: string = '';
+  public password: string = '';
+  constructor() { }
+  ngOnInit() {
+  }
+  onSubmit(){
+    console.log(`Username: ${this.username}, Password: ${this.password}`);
+  }
 
 }
